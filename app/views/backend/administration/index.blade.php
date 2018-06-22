@@ -29,9 +29,10 @@
     var pagefunction = function()
     {
 		$('#update_arma').click(function() {
+            
 			$.ajax({
 				type:   'GET',
-				url:    '//cp.am2.taw.net/backend/administration/update_arma',
+				url:    '//cp.mvmt.no/update_arma',
 				async:  'true',
 				data:   { format: 'json' },
 			}).done(function(data) {
