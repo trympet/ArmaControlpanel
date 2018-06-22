@@ -252,7 +252,7 @@ class UserTableSeeder extends Seeder {
         $role['squad_leaders']->save();
 		
 		$user['admin']                                  	= new User;
-        $user['admin']->email                           = 'admin@taw.net';   
+        $user['admin']->email                           = 'admin@example.com';   
         $user['admin']->picture                         = '/assets/modules/profile/admin.png';         		
         $user['admin']->username                        = 'admin';
         $user['admin']->password                        = 'admin';

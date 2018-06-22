@@ -11,5 +11,6 @@ Prerequesties: FireDaemon
 			   Arma 3 server
 			   PHP >= 5.4 
 
+Default credentials are: admin/admin
 
 ![Control panel screenshot](http://image.prntscr.com/image/0b9dbf4e33814ef98db725d350b73e5c.png)
