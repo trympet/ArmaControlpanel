@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <Service>
  <Program>
-  <Name>{{ $server->name }}_hc3</Name>
+  <Name>{{ $server->name }}_hc1</Name>
   <DisplayName>{{ $server->hostname_escaped }} - HC3</DisplayName>
   <DisplayNamePrefix>ArmA 3 - </DisplayNamePrefix>
-  <WorkingDir>C:\Steam\steamapps\common\Arma 3 Server</WorkingDir>
-  <Executable>C:\Steam\steamapps\common\Arma 3 Server\arma3server.exe</Executable>
-  <Parameters>-client -noLogs -connect=127.0.0.1 -password={{ $server->private_password }} -name=arma3 "-profiles=C:\Steam\steamapps\common\Arma 3 Server\instances\{{ $server->name }}\profile" "-cfg=C:\Steam\steamapps\common\Arma 3 Server\instances\{{ $server->name }}\basic.cfg" "-par=C:\Steam\steamapps\common\Arma 3 Server\instances\{{ $server->name }}\parameters.cfg" -port={{ $server->port }}2</Parameters>
+  <WorkingDir>{{ $ServerController->arma3path }}</WorkingDir>
+  <Executable>{{ $ServerController->arma3exe }}</Executable>
+  <Parameters>-client -noLogs -connect=127.0.0.1 -password={{ $server->private_password }} -name=arma3 "-profiles={{ $ServerController->arma3path }}\instances\{{ $server->name }}\profile" "-cfg={{ $ServerController->arma3path }}\instances\{{ $server->name }}\basic.cfg" "-par={{ $ServerController->arma3path }}\instances\{{ $server->name }}\parameters.cfg" -port={{ $server->port }}2</Parameters>
   <Delay>3000</Delay>
   <StartUpMode>0</StartUpMode>
   <ForceReplace>true</ForceReplace>

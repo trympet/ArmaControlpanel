@@ -7,8 +7,12 @@ require_once(__DIR__ ."/../../vendor/austinb/gameq/src/GameQ/Autoloader.php");
 class ServerController extends BaseController
 {   
 
+    //params:
     public $fireDaemonExe = "C:/firedaemon/FireDaemon.exe";
     public $arma3path = "C:/arma3server";
+    public $arma3x64Path = "C:/arma3server/arma3server_64.exe";
+    public $arma3exe = "C:/arma3server/arma3server.exe";
+    public $steamCmdExe = "C:/steamcmd/steamcmd.exe";
 
     public function GetIndex()
     {

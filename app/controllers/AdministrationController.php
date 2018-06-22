@@ -26,7 +26,7 @@ class AdministrationController extends BaseController
 
         set_time_limit(0);
 
-        $handle = popen("C:/steamcmd/steamcmd.exe +login anonymous +force_install_dir \"C:\Steam\steamapps\common\Arma 3 Server\" +app_update 233780 validate +quit", "r");
+        $handle = popen( $ServerController->steamCmdExe . " +login anonymous +force_install_dir \"" . $ServerController->arma3path . "\" +app_update 233780 validate +quit", "r");
 
         if (ob_get_level() == 0) 
             ob_start();

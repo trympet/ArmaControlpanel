@@ -17,17 +17,17 @@
                     <div class="well no-padding" style="position: relative; top: 50%; transform: translateY(-50%);">
                         <form action="login" method="post" id="login-form" class="smart-form client-form">
                             <header>
-                                Login to the panel
+                                Login to the control panel:
                             </header>
                             <fieldset>
                                 <section>
-                                    <label class="label">Username (Without @taw.net)</label>
+                                    <label class="label">Username</label>
                                     <label class="input">
                                         <i class="icon-append fa fa-user"></i>
                                         <input type="text" name="username" />
                                         <b class="tooltip tooltip-top-right">
                                             <i class="fa fa-user txt-color-teal"></i>
-                                            Please enter email address/username
+                                            Please enter your username
                                         </b>
                                     </label>
                                 </section>
@@ -38,7 +38,7 @@
                                         <input type="password" name="password" />
                                         <b class="tooltip tooltip-top-right">
                                             <i class="fa fa-lock txt-color-teal"></i>
-                                            Enter your password
+                                            Please enter your password
                                         </b>
                                     </label>
                                 </section>
