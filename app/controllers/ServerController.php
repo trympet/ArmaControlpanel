@@ -7,8 +7,8 @@ require_once(__DIR__ ."/../../vendor/austinb/gameq/src/GameQ/Autoloader.php");
 class ServerController extends BaseController
 {   
 
-    public $fireDeamonExe = "C:/FireDaemon/FireDaemon.exe";
-    public $arma3path = "C:/Steam/steamapps/common/Arma 3 Server";
+    public $fireDaemonExe = "C:/firedaemon/FireDaemon.exe";
+    public $arma3path = "C:/arma3server";
 
     public function GetIndex()
     {
@@ -229,11 +229,11 @@ class ServerController extends BaseController
 
         $this->GenerateFiles($server_id);
 
-        shell_exec($this->fireDeamonExe.' --start "' . $server->name . '"');
+        shell_exec($this->fireDaemonExe.' --start "' . $server->name . '"');
 
-        if($server->cpu_count > 0) shell_exec($this->fireDeamonExe.' --start "' . $server->name . '_hc1"');
-        if($server->cpu_count > 1) shell_exec($this->fireDeamonExe.' --start "' . $server->name . '_hc2"');
-        if($server->cpu_count > 2) shell_exec($this->fireDeamonExe.' --start "' . $server->name . '_hc3"');
+        if($server->cpu_count > 0) shell_exec($this->fireDaemonExe.' --start "' . $server->name . '_hc1"');
+        if($server->cpu_count > 1) shell_exec($this->fireDaemonExe.' --start "' . $server->name . '_hc2"');
+        if($server->cpu_count > 2) shell_exec($this->fireDaemonExe.' --start "' . $server->name . '_hc3"');
 
         return $server->name;
     }
@@ -253,11 +253,11 @@ class ServerController extends BaseController
     {
         $server = Server::find($server_id);
 
-        if($server->cpu_count > 0) shell_exec($this->fireDeamonExe.' --stop "' . $server->name . '_hc1"');
-        if($server->cpu_count > 1) shell_exec($this->fireDeamonExe.' --stop "' . $server->name . '_hc2"');
-        if($server->cpu_count > 2) shell_exec($this->fireDeamonExe.' --stop "' . $server->name . '_hc3"');
+        if($server->cpu_count > 0) shell_exec($this->fireDaemonExe.' --stop "' . $server->name . '_hc1"');
+        if($server->cpu_count > 1) shell_exec($this->fireDaemonExe.' --stop "' . $server->name . '_hc2"');
+        if($server->cpu_count > 2) shell_exec($this->fireDaemonExe.' --stop "' . $server->name . '_hc3"');
 
-        shell_exec($this->fireDeamonExe.' --stop "' . $server->name . '"');
+        shell_exec($this->fireDaemonExe.' --stop "' . $server->name . '"');
         @unlink($this->arma3path.'/instances/' . $server->name . '/server.pid');
 
         $this->GenerateFiles($server_id);
@@ -520,7 +520,7 @@ class ServerController extends BaseController
         $data['server']['server_dificulty'] = $data['server']['server_dificulty_'.$difficulty];
         $data['bans']               = ServerBans::all();
 
-        // shell_exec($this->fireDeamonExe.' --uninstall ' . $data['server']->name . '');
+        // shell_exec($this->fireDaemonExe.' --uninstall ' . $data['server']->name . '');
 
         $data['server']['hostname_escaped'] =  htmlspecialchars($data['server']['hostname']);
 
@@ -570,10 +570,10 @@ class ServerController extends BaseController
         $hc2 = $this->arma3path.'/instances/' . $data['server']->name . '/hc2.xml';
         $hc3 = $this->arma3path.'/instances/' . $data['server']->name . '/hc3.xml';
         $ser = $this->arma3path.'/instances/' . $data['server']->name . '/server.xml';
-        if($server->cpu_count > 0) shell_exec($this->fireDeamonExe.' --install "'.$hc1.'" "'.$hc1.'"');
-        if($server->cpu_count > 1) shell_exec($this->fireDeamonExe.' --install "'.$hc2.'" "'.$hc2.'"');
-        if($server->cpu_count > 2) shell_exec($this->fireDeamonExe.' --install "'.$hc3.'" "'.$hc3.'"');
-        shell_exec($this->fireDeamonExe.' --install "'.$ser.'" "'.$ser.'"');
+        if($server->cpu_count > 0) shell_exec($this->fireDaemonExe.' --install "'.$hc1.'" "'.$hc1.'"');
+        if($server->cpu_count > 1) shell_exec($this->fireDaemonExe.' --install "'.$hc2.'" "'.$hc2.'"');
+        if($server->cpu_count > 2) shell_exec($this->fireDaemonExe.' --install "'.$hc3.'" "'.$hc3.'"');
+        shell_exec($this->fireDaemonExe.' --install "'.$ser.'" "'.$ser.'"');
     }
 
     public function GetLogList($server_id)

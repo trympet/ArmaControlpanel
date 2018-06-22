@@ -1,14 +1,15 @@
 # AM2's Control Panel (CP)
-AM2 Control panel (CP for short) source code .
+ARMA 3 controlpanel (CP for short) source code.
 
-Huge thanks goes to FeralDude and Flogard who made this over the course of ~3 weeks with their hard and unprecedented dedication.
+Created by: [TrymPet](https://github.com/trympet) and [Jaap](https://github.com/jaapjolman).
 
 It is built on [laravel](https://laravel.com/) framework v4.2.
 
-Our Arma 3 servers are ran as a services installed in FireDaemon.
+This controlpanel was created for the TAW clan as it allowed for quick and easy creation of Arma 3 multiplayer servers.
 
-FireDaemon is a program that eases management of services.
+Prerequesties: FireDaemon
+			   Arma 3 server
+			   PHP >= 5.4 
 
-It uses FireDaemon command-line options to stop, start, install and uninstall services.
 
 ![Control panel screenshot](http://image.prntscr.com/image/0b9dbf4e33814ef98db725d350b73e5c.png)
