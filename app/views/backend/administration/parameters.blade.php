@@ -24,20 +24,26 @@
                                         </label>
                                     </section>
                                     <section class="col col-6">
+                                        <label class="label" for="arma64path">{{Lang::get('administration.arma64path')}}
+                                        </label>
                                         <label class="input">
-                                        <input class="valid" type="text"></input>
+                                        <input class="valid" type="text" name="arma64path"></input>
                                         </label>
                                     </section>
                                 </div>
                                 <div class="row">
                                     <section class="col col-6">
+                                        <label class="label" for="firedaemonpath">{{Lang::get('administration.firedaemonpath')}}
+                                        </label>
                                         <label class="input">
-                                        <input class="valid" type="text"></input>
+                                        <input class="valid" type="text" name="firedaemonpath"></input>
                                         </label>
                                     </section>
                                     <section class="col col-6">
+                                        <label class="label" for="armapathexe">{{Lang::get('administration.armapathexe')}}
+                                        </label>
                                         <label class="input">
-                                        <input class="valid" type="text"></input>
+                                        <input class="valid" type="text" name="armapathexe"></input>
                                         </label>
                                     </section>
                                 </div>
