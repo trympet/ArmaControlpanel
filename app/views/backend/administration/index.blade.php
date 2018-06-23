@@ -32,7 +32,7 @@
             
 			$.ajax({
 				type:   'GET',
-				url:    '//cp.mvmt.no/update_arma',
+				url:    '//cp.mvmt.no/backend/administration/update_arma',
 				async:  'true',
 				data:   { format: 'json' },
 			}).done(function(data) {
