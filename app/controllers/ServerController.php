@@ -114,12 +114,12 @@ class ServerController extends BaseController
         $server_dificulty_mercanary->server()->associate($server);
         $server_dificulty_mercanary->save();
 
-        mkdir($this->arma3path . $server->name . "");
-        mkdir($this->arma3path . $server->name . "/battleye");
-        mkdir($this->arma3path . $server->name . "/profile");
-        mkdir($this->arma3path . $server->name . "/profile/users");
-        mkdir($this->arma3path . $server->name . "/profile/users/arma3");
-        mkdir($this->arma3path . $server->name . "/profile/users/root");
+        mkdir($this->arma3path . "/instances/" . $server->name . "");
+        mkdir($this->arma3path . "/instances/" . $server->name . "/battleye");
+        mkdir($this->arma3path . "/instances/" . $server->name . "/profile");
+        mkdir($this->arma3path . "/instances/" . $server->name . "/profile/users");
+        mkdir($this->arma3path . "/instances/" . $server->name . "/profile/users/arma3");
+        mkdir($this->arma3path . "/instances/" . $server->name . "/profile/users/root");
 
         $this->GenerateFiles($server->id);
 
@@ -189,7 +189,7 @@ class ServerController extends BaseController
             return Redirect::to('backend/server');
 
         $server = Server::find($server_id);
-        $this->recursively_remove_directory($this->arma3path . $server->name . "");
+        $this->recursively_remove_directory($this->arma3path . "/instances/" . $server->name . "");
         $server->delete();
 
         return Redirect::to('backend/server');
