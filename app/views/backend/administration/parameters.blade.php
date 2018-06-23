@@ -13,44 +13,46 @@
                     <div class="jarviswidget-editbox">
                     </div>
 					<div class="widget-body no-padding">
-                        <fieldset>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <label class="input state-success">
-                                    <input class="valid" type="text"></input>
-                                    </label>
+                        <form class="smart-form">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label class="input state-success">
+                                        <input class="valid" type="text"></input>
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="input state-success">
+                                        <input class="valid" type="text"></input>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <label class="input state-success">
-                                    <input class="valid" type="text"></input>
-                                    </label>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label class="input state-success">
+                                        <input class="valid" type="text"></input>
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="input state-success">
+                                        <input class="valid" type="text"></input>
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <label class="input state-success">
-                                    <input class="valid" type="text"></input>
-                                    </label>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label class="input state-success">
+                                        <input class="valid" type="text"></input>
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="input state-success">
+                                        <input class="valid" type="text"></input>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <label class="input state-success">
-                                    <input class="valid" type="text"></input>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <label class="input state-success">
-                                    <input class="valid" type="text"></input>
-                                    </label>
-                                </div>
-                                <div class="col-sm-6">
-                                    <label class="input state-success">
-                                    <input class="valid" type="text"></input>
-                                    </label>
-                                </div>
-                            </div>
-                        </fieldset>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
             </div>
