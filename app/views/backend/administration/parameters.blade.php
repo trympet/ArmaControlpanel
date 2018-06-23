@@ -49,13 +49,17 @@
                                 </div>
                                 <div class="row">
                                     <section class="col col-6">
+                                        <label class="label" for="defaultplayers">{{Lang::get('administration.defaultplayers')}}
+                                        </label>
                                         <label class="input">
-                                        <input class="valid" type="text"></input>
+                                        <input class="valid" type="number" name="defaultplayers" min="4" max="256"></input>
                                         </label>
                                     </section>
                                     <section class="col col-6">
+                                        <label class="label" for="battleye">{{Lang::get('administration.battleye')}}
+                                        </label>
                                         <label class="input">
-                                        <input class="valid" type="text"></input>
+                                        <input class="valid" type="number" name="battleye" min="0" max="1"></input>
                                         </label>
                                     </section>
                                 </div>
