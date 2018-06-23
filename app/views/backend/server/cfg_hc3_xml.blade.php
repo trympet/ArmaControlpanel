@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <Service>
  <Program>
-  <Name>{{ $server->name }}_hc1</Name>
+  <Name>{{ $server->name }}_hc3</Name>
   <DisplayName>{{ $server->hostname_escaped }} - HC3</DisplayName>
   <DisplayNamePrefix>ArmA 3 - </DisplayNamePrefix>
   <WorkingDir>C:\arma3server</WorkingDir>
