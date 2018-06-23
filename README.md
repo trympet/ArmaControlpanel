@@ -10,7 +10,7 @@ This controlpanel was created for the TAW clan as it allowed for quick and easy 
 Prerequesties: FireDaemon
 			   Arma 3 server
 			   PHP >= 5.4 
-			   [DirectX](https://www.microsoft.com/en-ca/download/)details.aspx?id=35
+			   [DirectX](https://www.microsoft.com/en-ca/download/details.aspx?id=35)
 
 Default credentials are: admin/admin
 
