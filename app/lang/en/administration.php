@@ -6,6 +6,7 @@ return array(
 	"update"        	=> "Update",
 	"administration"    => "Administration",
 	"filesystem"    	=> "Filesystem",
-	"consoleoutput"		=> "Console output"
+	"consoleoutput"		=> "Console output",
+	"parameters"		=> "Parameters",
 
 );

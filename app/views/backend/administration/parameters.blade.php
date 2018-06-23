@@ -3,7 +3,7 @@
         <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="jarviswidget" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="true" data-widget-custombutton="false" data-widget-collapsed="false" data-widget-sortable="false">
                 <header>
-                    <span class="widget-icon"> <i class="fa fa-cloud-download"></i> </span>
+                    <span class="widget-icon"> <i class="fa fa-list-ul"></i> </span>
                     <h2>{{ Lang::get('administration.parameters') }}</h2>
                     <div class="widget-toolbar" role="menu">
                         <button id="update_arma" class="btn btn-default">{{ Lang::get('administration.update') }}</button>
@@ -14,9 +14,42 @@
                     </div>
 					<div class="widget-body no-padding">
                         <fieldset>
-                            <label class="textarea">
-                                    <div id="console_output"></div>
-                            </label>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label class="input state-success">
+                                    <input class="valid" type="text"></input>
+                                    </label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="input state-success">
+                                    <input class="valid" type="text"></input>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label class="input state-success">
+                                    <input class="valid" type="text"></input>
+                                    </label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="input state-success">
+                                    <input class="valid" type="text"></input>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label class="input state-success">
+                                    <input class="valid" type="text"></input>
+                                    </label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="input state-success">
+                                    <input class="valid" type="text"></input>
+                                    </label>
+                                </div>
+                            </div>
                         </fieldset>
                     </div>
                 </div>
