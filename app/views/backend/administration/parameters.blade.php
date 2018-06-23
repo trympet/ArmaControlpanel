@@ -16,40 +16,40 @@
                         <form class="smart-form">
                             <fieldset>
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <section class="col col-6">
                                         <label class="input">
                                         <input class="valid" type="text"></input>
                                         </label>
-                                    </div>
-                                    <div class="col-sm-6">
+                                    </section>
+                                    <section class="col col-6">
                                         <label class="input">
                                         <input class="valid" type="text"></input>
                                         </label>
-                                    </div>
+                                    </section>
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <section class="col col-6">
                                         <label class="input">
                                         <input class="valid" type="text"></input>
                                         </label>
-                                    </div>
-                                    <div class="col-sm-6">
+                                    </section>
+                                    <section class="col col-6">
                                         <label class="input">
                                         <input class="valid" type="text"></input>
                                         </label>
-                                    </div>
+                                    </section>
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <section class="col col-6">
                                         <label class="input">
                                         <input class="valid" type="text"></input>
                                         </label>
-                                    </div>
-                                    <div class="col-sm-6">
+                                    </section>
+                                    <section class="col col-6">
                                         <label class="input">
                                         <input class="valid" type="text"></input>
                                         </label>
-                                    </div>
+                                    </section>
                                 </div>
                             </fieldset>
                         </form>
