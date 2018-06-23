@@ -7,13 +7,14 @@ It is built on [laravel](https://laravel.com/) framework v4.2.
 
 This controlpanel was created for the TAW clan as it allowed for quick and easy creation of Arma 3 multiplayer servers.
 
-Prerequesties: FireDaemon
+Prerequesties: 
+                 FireDaemon
 
-			   Arma 3 server
+			     Arma 3 server
 
-			   PHP >= 5.4 
-               
-			   [DirectX](https://www.microsoft.com/en-ca/download/details.aspx?id=35)
+			     PHP >= 5.4 
+
+			     [DirectX](https://www.microsoft.com/en-ca/download/details.aspx?id=35)
 
 Default credentials are: admin/admin
 
