@@ -1,6 +1,6 @@
 <?php
 
-	$cmd = "C:/steamcmd/steamcmd.exe +login anonymous +force_install_dir \"C:\Steam\steamapps\common\Arma 3 Server\" +app_update 233780 validate +quit";
+	$cmd = "C:/steamcmd/steamcmd.exe +login anonymous +force_install_dir " . $ServerController->arma3path ." +app_update 233780 validate +quit";
 
 	$descriptorspec = array(
 	   0 => array("pipe", "r"),   // stdin is a pipe that the child will read from
