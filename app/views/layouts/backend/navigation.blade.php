@@ -57,16 +57,16 @@
                     @endif
 					@if (Auth::user()->can('see_administration'))
                         <li>
-                            <a href="backend/administration/dashboard" title="{{ Lang::get('navigation.administration') }}"><i class="fa fa-lg fa-fw fa-id-card"></i> <span class="menu-item-parent">{{ Lang::get('navigation.administration') }}</span></a>
+                            <a href="backend/administration" title="{{ Lang::get('navigation.administration') }}"><i class="fa fa-lg fa-fw fa-id-card"></i> <span class="menu-item-parent">{{ Lang::get('navigation.administration') }}</span></a>
                             <ul>
                                 @if (Auth::user()->can('see_update_arma'))
                                     <li>
-                                        <a href="backend/administration/dashboard" title="{{ Lang::get('navigation.updatearma') }}"><i class="fa fa-lg fa-fw fa-cloud-download"></i> <span class="menu-item-parent">{{ Lang::get('navigation.updatearma') }}</span></a>
+                                        <a href="backend/administration" title="{{ Lang::get('navigation.updatearma') }}"><i class="fa fa-lg fa-fw fa-cloud-download"></i> <span class="menu-item-parent">{{ Lang::get('navigation.updatearma') }}</span></a>
                                     </li>
                                 @endif
                                 @if (Auth::user()->can('see_parameters'))
                                 <li>
-                                    <a href="backend/administration/parameters" title="{{ Lang::get('navigation.parameters') }}"><i class="fa fa-lg fa-fw fa-hdd"></i> <span class="menu-item-parent">{{ Lang::get('navigation.parameters') }}</span></a>
+                                    <a href="backend/administration/parameters" title="{{ Lang::get('navigation.parameters') }}"><i class="fa fa-lg fa-fw fa-list-last"></i> <span class="menu-item-parent">{{ Lang::get('navigation.parameters') }}</span></a>
                                 </li>
                                 @endif
                             </ul>

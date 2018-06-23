@@ -13,7 +13,7 @@ return array(
     "security_roles"        => "Roles",
     "security_permissions"  => "Permissions",
     "administration"  		=> "Administration",
-    "update_arma"           => "Update Arma",
+    "updatearma"           => "Update Arma",
     "parameters"            => "Parameters",
 
 );
