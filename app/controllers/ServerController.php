@@ -190,10 +190,10 @@ class ServerController extends BaseController
 
         $server = Server::find($server_id);
         $this->recursively_remove_directory($this->arma3path . "/instances/" . $server->name . "");
-        if($server->cpu_count > 0) shell_exec($this->fireDaemonExe . ' --uninstall "'. $hc1 .'"');
-        if($server->cpu_count > 1) shell_exec($this->fireDaemonExe . ' --uninstall "'. $hc2 .'"');
-        if($server->cpu_count > 2) shell_exec($this->fireDaemonExe . ' --uninstall "'. $hc3 .'"');
-        shell_exec($this->fireDaemonExe . ' --uninstall "' . $ser . '"');
+        if($server->cpu_count > 0) shell_exec($this->fireDaemonExe .' --uninstall "' . $server->name . '_hc1"');
+        if($server->cpu_count > 1) shell_exec($this->fireDaemonExe .' --uninstall "' . $server->name . '_hc2"');
+        if($server->cpu_count > 2) shell_exec($this->fireDaemonExe .' --uninstall "' . $server->name . '_hc3"');
+        shell_exec($this->fireDaemonExe .' --uninstall "' . $server->name . '"');
 
         $server->delete();
 
