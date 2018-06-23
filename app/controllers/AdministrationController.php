@@ -10,17 +10,17 @@ class AdministrationController extends BaseController
         return View::make('backend.administration.index');
     }
 	
-	 public function GetAdministration()
+	 public function GetUpdateArma()
     {
 		if ( ! Auth::user()->can('see_administration'))
             return Redirect::to('backend#backend/dashboard/index');
 		
         $data['profile'] = Auth::user();
 
-        return View::make('backend.administration.index', $data);
+        return View::make('backend.administration.update_arma', $data);
     }
 
-	public function GetUpdateArma()
+	public function PostUpdateArma()
     {
 		header('Content-Encoding: none;');
 
@@ -47,5 +47,15 @@ class AdministrationController extends BaseController
         pclose($handle);
         ob_end_flush();
 		
+    }
+
+    public function GetParameters()
+    {
+        if ( ! Auth::user()->can('see_parameters'))
+            return Redirect::to('backend#backend/dashboard/index');
+        
+        $data['profile'] = Auth::user();
+
+        return View::make('backend.administration.parameters', $data);
     }
 }

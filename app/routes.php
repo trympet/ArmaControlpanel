@@ -56,22 +56,23 @@ Route::get('backend',
     }
 ]);
 
-Route::get('backend/dashboard',
+Route::get('backend/administration/dashboard',
 [
     'before'    => 'auth',
     'uses'      => 'DashboardController@GetIndex',
 ]);
 
-Route::get('backend/administration',
+Route::get('backend/administration/parameters',
 [
     'before'    => 'auth',
     'uses'      => 'AdministrationController@GetAdministration',
 ]);
 
+
 Route::get('backend/administration/update_arma',
 [
     'before'    => 'auth',
-    'uses'      => 'AdministrationController@GetUpdateArma',
+    'uses'      => 'AdministrationController@PostUpdateArma',
 ]);
 
 
