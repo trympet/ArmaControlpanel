@@ -574,9 +574,9 @@ class ServerController extends BaseController
         $hc2 = $this->arma3path.'/instances/' . $data['server']->name . '/hc2.xml';
         $hc3 = $this->arma3path.'/instances/' . $data['server']->name . '/hc3.xml';
         $ser = $this->arma3path.'/instances/' . $data['server']->name . '/server.xml';
-        if($server->cpu_count > 0) shell_exec($this->fireDaemonExe.' --install "'.$hc1.'" "'.$hc1.'"');
-        if($server->cpu_count > 1) shell_exec($this->fireDaemonExe.' --install "'.$hc2.'" "'.$hc2.'"');
-        if($server->cpu_count > 2) shell_exec($this->fireDaemonExe.' --install "'.$hc3.'" "'.$hc3.'"');
+        if($server->cpu_count > 0) shell_exec($this->fireDaemonExe.' --install "'.$hc1.'"');
+        if($server->cpu_count > 1) shell_exec($this->fireDaemonExe.' --install "'.$hc2.'"');
+        if($server->cpu_count > 2) shell_exec($this->fireDaemonExe.' --install "'.$hc3.'"');
         shell_exec($this->fireDaemonExe.' --install "'.$ser.'" "'.$ser.'"');
     }
 
