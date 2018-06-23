@@ -17,8 +17,10 @@
                             <fieldset>
                                 <div class="row">
                                     <section class="col col-6">
+                                        <label class="label" for="armapath">{{Lang::get('administration.armapath')}}
+                                        </label>
                                         <label class="input">
-                                        <input class="valid" type="text"></input>
+                                        <input class="valid" type="text" name="armapath"></input>
                                         </label>
                                     </section>
                                     <section class="col col-6">
