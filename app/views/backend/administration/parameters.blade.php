@@ -17,36 +17,36 @@
                             <fieldset>
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <label class="input state-success">
+                                        <label class="input">
                                         <input class="valid" type="text"></input>
                                         </label>
                                     </div>
                                     <div class="col-sm-6">
-                                        <label class="input state-success">
-                                        <input class="valid" type="text"></input>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <label class="input state-success">
-                                        <input class="valid" type="text"></input>
-                                        </label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label class="input state-success">
+                                        <label class="input">
                                         <input class="valid" type="text"></input>
                                         </label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <label class="input state-success">
+                                        <label class="input">
                                         <input class="valid" type="text"></input>
                                         </label>
                                     </div>
                                     <div class="col-sm-6">
-                                        <label class="input state-success">
+                                        <label class="input">
+                                        <input class="valid" type="text"></input>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label class="input">
+                                        <input class="valid" type="text"></input>
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="input">
                                         <input class="valid" type="text"></input>
                                         </label>
                                     </div>
