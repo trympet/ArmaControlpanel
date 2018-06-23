@@ -764,7 +764,7 @@ class ServerController extends BaseController
         $message = "";
         if (Input::hasFile('mission'))
         {
-            $maxFileSizeBytes = 50 * 1024 * 1024;
+            $maxFileSizeBytes = 500 * 1024 * 1024;
             
             if(Input::file('mission')->getSize() > $maxFileSizeBytes)
             {
