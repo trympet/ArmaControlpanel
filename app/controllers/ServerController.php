@@ -575,10 +575,10 @@ class ServerController extends BaseController
         $this->file_force_contents($this->arma3path.'/instances/' . $data['server']->name . '/profile/users/arma3/Arma3.cfg', $file->basic_cfg);
         $this->file_force_contents($this->arma3path.'/instances/' . $data['server']->name . '/profile/users/administrator/Arma3.cfg', $file->basic_cfg);
 
-        public $hc1 = $this->arma3path.'/instances/' . $data['server']->name . '/hc1.xml';
-        public $hc2 = $this->arma3path.'/instances/' . $data['server']->name . '/hc2.xml';
-        public $hc3 = $this->arma3path.'/instances/' . $data['server']->name . '/hc3.xml';
-        public $ser = $this->arma3path.'/instances/' . $data['server']->name . '/server.xml';
+        $hc1 = $this->arma3path.'/instances/' . $data['server']->name . '/hc1.xml';
+        $hc2 = $this->arma3path.'/instances/' . $data['server']->name . '/hc2.xml';
+        $hc3 = $this->arma3path.'/instances/' . $data['server']->name . '/hc3.xml';
+        $ser = $this->arma3path.'/instances/' . $data['server']->name . '/server.xml';
         if($server->cpu_count > 0) shell_exec($this->fireDaemonExe . ' --install "'. $hc1 .'"');
         if($server->cpu_count > 1) shell_exec($this->fireDaemonExe . ' --install "'. $hc2 .'"');
         if($server->cpu_count > 2) shell_exec($this->fireDaemonExe . ' --install "'. $hc3 .'"');
