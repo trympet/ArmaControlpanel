@@ -65,7 +65,13 @@ Route::get('backend/dashboard',
 Route::get('backend/administration/parameters',
 [
     'before'    => 'auth',
-    'uses'      => 'AdministrationController@GetAdministration',
+    'uses'      => 'AdministrationController@GetParameters',
+]);
+
+Route::get('backend/administration',
+[
+    'before'    => 'auth',
+    'uses'      => 'AdministrationController@GetIndex',
 ]);
 
 
