@@ -56,7 +56,7 @@ Route::get('backend',
     }
 ]);
 
-Route::get('backend/administration/dashboard',
+Route::get('backend/dashboard',
 [
     'before'    => 'auth',
     'uses'      => 'DashboardController@GetIndex',
