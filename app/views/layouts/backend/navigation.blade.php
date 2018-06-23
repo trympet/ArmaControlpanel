@@ -66,7 +66,7 @@
                                 @endif
                                 @if (Auth::user()->can('see_parameters'))
                                 <li>
-                                    <a href="backend/administration/parameters" title="{{ Lang::get('navigation.parameters') }}"><i class="fa fa-lg fa-fw fa-list-last"></i> <span class="menu-item-parent">{{ Lang::get('navigation.parameters') }}</span></a>
+                                    <a href="backend/administration/parameters" title="{{ Lang::get('navigation.parameters') }}"><i class="fa fa-lg fa-fw fa-list-ul"></i> <span class="menu-item-parent">{{ Lang::get('navigation.parameters') }}</span></a>
                                 </li>
                                 @endif
                             </ul>
