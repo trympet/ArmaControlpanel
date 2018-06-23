@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <Service>
  <Program>
-  <Name>{{ $server->name }}_hc1</Name>
-  <DisplayName>{{ $server->hostname_escaped }} - HC1</DisplayName>
+  <Name>{{ $server->name }}</Name>
+  <DisplayName>{{ $server->hostname_escaped }}</DisplayName>
   <DisplayNamePrefix>ArmA 3 - </DisplayNamePrefix>
-  <WorkingDir>C:\arma3server</WorkingDir>
-  <Executable>C:\arma3server\arma3server.exe</Executable>
-  <Parameters>-client -noLogs -connect=127.0.0.1 -password={{ $server->private_password }} -name=arma3 "-profiles=C:\arma3server\instances\{{ $server->name }}\profile" "-cfg=C:\arma3server\instances\{{ $server->name }}\basic.cfg" "-par=C:\arma3server\instances\{{ $server->name }}\parameters.cfg" -port={{ $server->port }}2</Parameters>
+  <WorkingDir>{{ $ServerController->arma3path }}</WorkingDir>
+  <Executable>{{ $ServerController->arma3exe }}</Executable>
+  <Parameters>-server -name=arma3 "-profiles={{ $ServerController->arma3path }}\instances\{{ $server->name }}\profile" "-pid={{ $ServerController->arma3path }}\instances\{{ $server->name }}\server.pid" "-config={{ $ServerController->arma3path }}\instances\{{ $server->name }}\server.cfg" "-cfg={{ $ServerController->arma3path }}\instances\{{ $server->name }}\basic.cfg" "-par={{ $ServerController->arma3path }}\instances\{{ $server->name }}\parameters.cfg" "-ranking={{ $ServerController->arma3path }}\instances\{{ $server->name }}\logs\ranking.log" "-bepath={{ $ServerController->arma3path }}\instances\{{ $server->name }}\battleye" -port={{ $server->port }}2</Parameters>
   <Delay>3000</Delay>
   <StartUpMode>0</StartUpMode>
   <ForceReplace>true</ForceReplace>
