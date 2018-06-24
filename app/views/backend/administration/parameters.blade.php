@@ -20,7 +20,7 @@
                                         <label class="label" for="armapath">{{Lang::get('administration.armapath')}}
                                         </label>
                                         <label class="input">
-                                        <input class="valid" type="text" name="armapath" value="<?php print_r($armapath) ?>"></input>
+                                        <input class="valid" type="text" name="armapath" value="<?php print_r($armapath->0) ?>"></input>
                                         </label>
                                     </section>
                                     <section class="col col-6">
