@@ -55,8 +55,8 @@ class AdministrationController extends BaseController
             return Redirect::to('backend#backend/dashboard/index');
         
         $data['profile'] = Auth::user();
-        $data['armapath'] = DB::select("SELECT armapath FROM parameters WHERE id = 1");
-        return $data['armapath'][0]->row();
+        //$data['armapath'] = DB::select("SELECT armapath FROM parameters WHERE id = 1");
+        //return $data['armapath'][0]->row();
 
         $params                 = new Params;
         $params->armapath       = Input::get('armapath');
