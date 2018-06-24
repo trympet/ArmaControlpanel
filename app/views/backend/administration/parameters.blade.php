@@ -36,14 +36,14 @@
                                         <label class="label" for="firedaemonpath">{{Lang::get('administration.firedaemonpath')}}
                                         </label>
                                         <label class="input">
-                                        <input class="valid" type="text" name="firedaemonpath"></input>
+                                        <input class="valid" type="text" name="firedaemonpath" placeholder="{{Lang::get('administration.firedaemonpath')}}"></input>
                                         </label>
                                     </section>
                                     <section class="col col-6">
                                         <label class="label" for="armapathexe">{{Lang::get('administration.armapathexe')}}
                                         </label>
                                         <label class="input">
-                                        <input class="valid" type="text" name="armapathexe"></input>
+                                        <input class="valid" type="text" name="armapathexe" placeholder="{{Lang::get('administration.armapathexe')}}"></input>
                                         </label>
                                     </section>
                                 </div>
@@ -52,14 +52,14 @@
                                         <label class="label" for="defaultplayers">{{Lang::get('administration.defaultplayers')}}
                                         </label>
                                         <label class="input">
-                                        <input class="valid" type="number" name="defaultplayers" min="4" max="256"></input>
+                                        <input class="valid" type="number" name="defaultplayers" min="4" max="256" placeholder="{{Lang::get('administration.defaultplayers')}}"></input>
                                         </label>
                                     </section>
                                     <section class="col col-6">
-                                        <label class="label" for="battleye">{{Lang::get('administration.battleye')}}
+                                        <label class="label" for="battleye">{{Lang::get('administration.hostnameprefix')}}
                                         </label>
                                         <label class="input">
-                                        <input class="valid" type="number" name="battleye" min="0" max="1"></input>
+                                        <input class="valid" type="text" name="hostnameprefix" placeholder="{{Lang::get('administration.hostnameprefix')}}"></input>
                                         </label>
                                     </section>
                                 </div>

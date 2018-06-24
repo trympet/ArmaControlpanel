@@ -12,5 +12,7 @@ return array(
 	"arma64path"		=> "Arma 3 64bit Executable Path",
 	"firedaemonpath"	=> "FireDaemon Executable Path",
 	"armapathexe"		=> "Arma 3 Executable Path"
+	"defaultplayers"	=> "Default Player Count"
+	"hostnameprefix"	=> "Default Hostname Prefix"
 
 );
