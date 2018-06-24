@@ -194,10 +194,10 @@ class ServerController extends BaseController
         if($server->cpu_count > 1) shell_exec($this->fireDaemonExe .' --uninstall "' . $server->name . '_hc2"');
         if($server->cpu_count > 2) shell_exec($this->fireDaemonExe .' --uninstall "' . $server->name . '_hc3"');
         shell_exec($this->fireDaemonExe .' --uninstall "' . $server->name . '"');
+        
+        return Redirect::to('backend/server');
 
         $server->delete();
-        sleep(2);
-        return Redirect::to('backend/server');
     }
     
 
