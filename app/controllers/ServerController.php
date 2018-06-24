@@ -196,7 +196,7 @@ class ServerController extends BaseController
         shell_exec($this->fireDaemonExe .' --uninstall "' . $server->name . '"');
 
         $server->delete();
-
+        sleep(2);
         return Redirect::to('backend/server');
     }
     

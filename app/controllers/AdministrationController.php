@@ -63,4 +63,9 @@ class AdministrationController extends BaseController
 
         return View::make('backend.administration.parameters', $data);
     }
+
+    public function PostParameters()
+    {
+
+    }
 }
