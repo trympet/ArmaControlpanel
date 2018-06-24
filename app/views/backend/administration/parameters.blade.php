@@ -63,6 +63,30 @@
                                         </label>
                                     </section>
                                 </div>
+                                <div class="row">
+                                    <section>
+                                        <label for="battleye">
+                                            {{ Lang::get('administration.battleye') }}
+                                        </label>
+                                        <div class="inline-group">
+                                            <label class="radio">
+                                                <input type="radio" name="battleye" value="1" />
+                                                <i></i>{{ Lang::get('general.yes') }}
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="battleye" value="0" />
+                                                <i></i>{{ Lang::get('general.no') }}
+                                            </label>
+                                        </div>
+                                    </section>
+                                    <section class="col col-6">
+                                        <label class="label" for="hostnameprefix">{{Lang::get('administration.hostnameprefix')}}
+                                        </label>
+                                        <label class="input">
+                                        <input class="valid" type="text" name="hostnameprefix" placeholder="{{Lang::get('administration.hostnameprefix')}}"></input>
+                                        </label>
+                                    </section>
+                                </div>
                             </fieldset>
                         </form>
                     </div>
