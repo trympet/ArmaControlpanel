@@ -64,7 +64,7 @@
                                     </section>
                                 </div>
                                 <div class="row">
-                                    <section>
+                                    <section class="col col-6">
                                         <label for="battleye">
                                             {{ Lang::get('administration.battleye') }}
                                         </label>

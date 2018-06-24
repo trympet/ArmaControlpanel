@@ -14,5 +14,6 @@ return array(
 	"armapathexe"		=> "Arma 3 Executable Path",
 	"defaultplayers"	=> "Default Player Count",
 	"hostnameprefix"	=> "Default Hostname Prefix",
+	"battleye"			=> "battleye",
 
 );
