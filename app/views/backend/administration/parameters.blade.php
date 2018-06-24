@@ -52,11 +52,11 @@
                                         <label class="label" for="defaultplayers">{{Lang::get('administration.defaultplayers')}}
                                         </label>
                                         <label class="input">
-                                        <input class="valid" type="number" name="defaultplayers" min="4" max="256" placeholder="{{Lang::get('administration.defaultplayers')}}"></input>
+                                        <input class="valid" type="number" name="defaultplayers" min="4" max="256" placeholder="64"></input>
                                         </label>
                                     </section>
                                     <section class="col col-6">
-                                        <label class="label" for="battleye">{{Lang::get('administration.hostnameprefix')}}
+                                        <label class="label" for="hostnameprefix">{{Lang::get('administration.hostnameprefix')}}
                                         </label>
                                         <label class="input">
                                         <input class="valid" type="text" name="hostnameprefix" placeholder="{{Lang::get('administration.hostnameprefix')}}"></input>
