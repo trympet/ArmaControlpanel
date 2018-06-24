@@ -58,14 +58,29 @@ class AdministrationController extends BaseController
         //$data['armapath'] = DB::select("SELECT armapath FROM parameters WHERE id = 1");
         //return $data['armapath'][0]->row();
 
-        $params                 = new Params;
-        $params->armapath       = Input::get('armapath');
-
         return View::make('backend.administration.parameters', $data);
     }
 
     public function PostParameters()
     {
+        if (Input::get('armapath') != '') {
+            $data['armapath'] = Input::get('armapath');
+        }
 
+        if (Input::get('arma64path') != '') {
+            $data['arma64path'] = Input::get('arma64path');
+        }
+
+        if (Input::get('firedaemonpath') != '') {
+            $data['firedaemonpath'] = Input::get('firedaemonpath');
+        }
+
+        if (Input::get('armapathexe') != '') {
+            $data['armapathexe'] = Input::get('armapathexe');
+        }
+
+        if (Input::get('defaultplayers') != '') {
+            $data['defaultplayers'] = Input::get('defaultplayers');
+        }
     }
 }

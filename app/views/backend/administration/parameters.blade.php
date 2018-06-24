@@ -20,14 +20,14 @@
                                         <label class="label" for="armapath">{{Lang::get('administration.armapath')}}
                                         </label>
                                         <label class="input">
-                                        <input class="valid" type="text" name="armapath" placeholder="{{ Lang::get('administration.armapath') }}" value="{{ $params->armapath }}"></input>
+                                        <input class="valid" type="text" name="armapath" placeholder="{{ Lang::get('administration.armapath') }}" value="{{ $armapath }}"></input>
                                         </label>
                                     </section>
                                     <section class="col col-6">
                                         <label class="label" for="arma64path">{{Lang::get('administration.arma64path')}}
                                         </label>
                                         <label class="input">
-                                        <input class="valid" type="text" name="arma64path"></input>
+                                        <input class="valid" type="text" name="arma64path" placeholder="{{ Lang::get('administration.arma64path') }}"></input>
                                         </label>
                                     </section>
                                 </div>
